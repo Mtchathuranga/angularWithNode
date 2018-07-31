@@ -1,0 +1,16 @@
+<div class="login-page">
+  <div class="form"> 
+    <form >
+      <div class="md-form">
+          <i class="fa fa-user prefix"></i>
+        <input type="text"  (ngModel)="userDetails.userName" name="userName" class="form-control" placeholder="User Name">        
+      </div>
+      <div class="md-form">
+          <i class="fa fa-lock prefix"></i>
+          <input type="password"  (ngModel)="userDetails.password" name="password" placeholder="password" class="form-control validate">         
+      </div>
+      <button type="button" class="btn btn-primary" (click)="LogInSubmit()" >Log In</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
